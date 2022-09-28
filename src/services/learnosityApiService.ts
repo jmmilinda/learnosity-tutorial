@@ -63,4 +63,9 @@ export default class LearnosityApiService {
     return response.data;
   }
 
+  public getSignRequest(apiName: string, security: object, consumer_secret: string, request: object): Promise<object> {
+    const apiRequest = this.learnositySdk.init(apiName, security, consumer_secret, request);
+    return apiRequest;
+  }
+
 }

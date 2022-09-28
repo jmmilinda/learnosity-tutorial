@@ -55,6 +55,17 @@ const learnosityLambdas = {
         }
       }
     ]
+  },
+  "getSignInRequest": {
+    handler: `${handlerPath(__dirname)}/getSignRequest.handler`,
+    events: [
+      {
+        http: {
+          method: 'post',
+          path: 'learnosity/sign-request'
+        }
+      }
+    ]
   }
 };
 export default learnosityLambdas;
