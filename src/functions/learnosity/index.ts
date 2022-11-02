@@ -62,7 +62,8 @@ const learnosityLambdas = {
       {
         http: {
           method: 'post',
-          path: 'learnosity/sign-request'
+          path: 'learnosity/sign-request',
+          cors: true
         }
       }
     ]
